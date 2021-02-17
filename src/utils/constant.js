@@ -1,4 +1,4 @@
 const constant = {
-    MODEL:{BANK:'banks'}
+    MODEL:{BANK:'banks', ACCOUNT:'accounts'}
 }
 module.exports = constant;
