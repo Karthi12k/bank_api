@@ -12,6 +12,8 @@ app.use('/bank',require('./controller/bank-controller'));// creating base url an
 
 app.use('/account',require('./controller/account-controller'));// creating base url and connectiing with route path
 
+app.use('/user',require('./controller/user-controller'));// creating base url and connectiing with route path
+
 
 
 
