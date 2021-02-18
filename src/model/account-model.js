@@ -2,21 +2,27 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const constant = require('../utils/constant');
 const AccountSchema = new Schema({
-  name: {
+  type: {
       type:String,
       required: true
   },
   number: {
-    type:Number,
+    type:String,
     required: true,
 },
   bank: {
-    type:String,
+    type:Schema.Types.ObjectId,
+    ref:"banks",
     required: true
 },
   user: {
-    type:String,
-    required: true
+    type:Schema.Types.ObjectId,
+    ref:"users",
+    required: true,
+  balance:{
+   type:Number,
+   required:true
+  }
 },
 });
 module.exports = mongoose.model(constant.MODEL.ACCOUNT, AccountSchema);
