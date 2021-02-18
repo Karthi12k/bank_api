@@ -6,6 +6,7 @@ const userDAO = {
             password: payload.password,
             address: payload.address,
             email: payload.email,
+            bank:payload.bank,
             phone: payload.phone
         }).save();
     }

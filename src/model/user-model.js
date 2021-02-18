@@ -22,5 +22,10 @@ const userSchema = new Schema({
     type:Number,
     required: true
 },
+  bank: {
+    type:Schema.Types.ObjectId,
+    ref:'banks' ,
+    required: true
+  }
 });
 module.exports = mongoose.model(constant.MODEL.USER, userSchema);
