@@ -9,6 +9,10 @@ const userDAO = {
             bank:payload.bank,
             phone: payload.phone
         }).save();
-    }
+    },
+    ifExist: (phone)=>{
+        return userModel.findOne({phone:phone});
+    },
+
 }
 module.exports = userDAO;

@@ -14,7 +14,7 @@ app.use('/account',require('./controller/account-controller'));// creating base 
 
 app.use('/user',require('./controller/user-controller'));// creating base url and connectiing with route path
 
-
+app.use('/auth',require('./controller/auth-controller'));
 
 
 
