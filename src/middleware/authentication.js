@@ -1,5 +1,5 @@
 const userDAO = require('../dao/user-dao');
-const constant = require('../utils/constant');
+const constant = require('../utils/constant') ;
 const jwt = require('jsonwebtoken');
 let authentication = (req,res, next)=>{
         try{
